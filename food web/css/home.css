@@ -1,0 +1,952 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(254, 196, 127, 0.6);
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.logo {
+    padding-top: 5px;
+}
+
+.logo img {
+    height: 35px;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-left {
+    display: flex;
+    left: 0px;
+    align-items: center;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li {
+    padding-right: 25px;
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #503917;
+}
+
+.navbar-order-btn {
+    background-color: #FF7E00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.burger {
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+
+}
+
+.line {
+    cursor: pointer;
+    width: 33px;
+    height: 4px;
+    margin: 3px 3px;
+    background-color: white;
+}
+
+.h-nav-resp {
+    height: 30px;
+}
+
+/* .v-class-resp{
+    opacity: 0;
+} */
+/* Home page image on right top corner */
+.home-image {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* start tesxt on Home page */
+.home-text-main {
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    border-radius: 20px;
+    margin: 50px;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.home-text {
+    flex: 1;
+    padding-right: 20px;
+    padding-top: 0px;
+
+}
+
+.home-text h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.home-text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.quick-order-btn {
+    background-color: #FF7E00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* leaf left side on Home page */
+.leaf {
+    width: 20%;
+    margin-top: 0px;
+}
+
+/* start icons location, phone, time, etc...  */
+.icons {
+    display: flex;
+    justify-content: center;
+    /* gap: 100px; */
+
+}
+
+.icon-container {
+    text-align: center;
+}
+
+.icon-image {
+    width: 15%;
+    align-items: center;
+}
+
+.icon-container h3 {
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.icon-container p {
+    font-size: 0.8rem;
+    color: #666666;
+    margin: 0px;
+}
+
+/* right side pizza image */
+.pizza-img {
+    width: 35%;
+    float: left;
+
+}
+
+/* quality Section is a text on right side*/
+.quality {
+    padding-left: 50%;
+    padding-top: 150px;
+    max-width: 1200px;
+}
+
+.quality-text {
+    flex: 1;
+    padding-right: 70px;
+
+}
+
+.quality-text h3 {
+    font-size: 1.5rem;
+    color: #00bb00;
+}
+
+.quality-text h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.quality-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.discover-more-btn {
+    background-color: #FF7E00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* chef Section is a shef's on mid of the leafs*/
+.chef-section {
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+.chef-heading {
+    justify-content: center;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 1200px;
+    text-align: center;
+    z-index: 1;
+    margin: auto;
+}
+
+.chef-text {
+    padding-right: 20px;
+    padding-top: 0px;
+}
+
+.chef-text h4 {
+    font-size: 1.5rem;
+    color: #00bb00;
+}
+
+.chef-text h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.chef-text p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.chef-images {
+    gap: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chef-img {
+    background-color: #fff6eb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chef-img img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.chef-img h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chef-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.best-foods-text {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.best-foods-text h1 {
+    font-size: 2rem;
+    color: #feaa1a;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.food-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+}
+
+.food-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.food-details {
+    padding: 15px;
+}
+
+.food-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.food-price {
+    color: #ffd000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.btn-order {
+    padding: 10px 20px;
+    background-color: #00bb00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-order:hover {
+    background-color: #00ff00;
+}
+
+.end-learn-more {
+    background-color: #ff7a34;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.end {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Start Footer services for buying */
+footer {
+    background-color: #000000;
+    color: white;
+    border-bottom-left-radius: 80px
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(0, 72, 255);
+}
+
+.contact-section input[type="email"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+}
+
+.contact-section a {
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #d04f29;
+}
+
+.credit {
+    font-size: 14px;
+    color: #ffe6d8;
+}
+
+.last {
+    background-color: #131313;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 80px
+}
+
+
+/* Responsive Design for laptops and pc etc  */
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 15px 15px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .nav-list {
+
+        margin: 15px 20px;
+        gap: 15px;
+    }
+
+    .nav-list li {
+        padding-right: 20px;
+    }
+
+    .nav-list li a {
+        font-size: 1rem;
+    }
+
+    /* start tesxt on Home page */
+    .home-text-main {
+        padding-left: 40px;
+        margin: 25px;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    /* leaf left side on Home page */
+    .leaf {
+        width: 18%;
+    }
+
+    .quick-order-btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    /* start icons location, phone, time, etc...  */
+    .icon-image {
+        width: 10%;
+    }
+
+    .icon-container h3 {
+        font-size: 0.8rem;
+    }
+
+    .icon-container p {
+        font-size: 0.6rem;
+    }
+
+    /* right side pizza image */
+    .pizza-img {
+        width: 30%;
+
+    }
+
+    /* quality Section is a text on right side*/
+    .quality {
+        padding-top: 130px;
+    }
+
+    .quality-text h3 {
+        font-size: 1rem;
+    }
+
+    .quality-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .quality-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .discover-more-btn {
+        border-radius: 20px;
+        font-size: 0.8rem;
+    }
+
+
+    /* chef Section is a shef's on mid of the leafs*/
+    .chef-section {
+        margin-top: 100px;
+    }
+
+    .chef-text h4 {
+        font-size: 1rem;
+    }
+
+    .chef-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .chef-text p {
+        font-size: 1rem;
+    }
+
+    .end-learn-more {
+        font-size: 0.8rem;
+    }
+}
+
+/* for tablates only */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 5px 15px;
+    }
+
+    .logo IMG {
+        height: 20PX;
+    }
+
+    .nav-list {
+
+        margin: 10px 15px;
+        gap: 0px;
+    }
+
+    .nav-list LI A {
+        font-size: 0.8REM;
+    }
+
+    .navbar-order-btn {
+        padding: 4px 8px;
+        font-size: 0.6rem;
+    }
+
+    /* start tesxt on Home page */
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-text p {
+        font-size: 0.8rem;
+    }
+
+    .quick-order-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* leaf left side on Home page */
+    .leaf {
+        width: 15%;
+    }
+
+
+    /* start icons location, phone, time, etc...  */
+    .icon-image {
+        width: 10%;
+    }
+
+    .icon-container h3 {
+        font-size: 0.7rem;
+    }
+
+    .icon-container p {
+        font-size: 0.5rem;
+    }
+
+    /* right side pizza image */
+    .pizza-img {
+        width: 30%;
+
+    }
+
+    /* quality Section is a text on right side*/
+    .quality {
+        padding-top: 70px;
+    }
+
+    .quality-text {
+        padding-right: 20px;
+    }
+
+    .quality-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .quality-text p {
+        font-size: 0.8rem;
+    }
+
+    .discover-more-btn {
+        padding: 6px 12px;
+    }
+
+    /* chef Section is a shef's on mid of the leafs*/
+    .chef-section {
+        margin-top: 80px;
+    }
+
+    .chef-text h4 {
+        font-size: 0.8rem;
+    }
+
+    .chef-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .chef-text p {
+        font-size: 0.8rem;
+    }
+
+    .chef-img h2 {
+        font-size: 0.8rem;
+    }
+
+    .chef-img h5 {
+        font-size: 0.5rem;
+    }
+
+    .best-foods-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .food-grid {
+        width: 90%;
+    }
+
+    .food-title {
+        font-size: 1rem;
+    }
+
+    .food-price {
+        font-size: 0.9rem;
+    }
+
+    .btn-order {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .logo-footer {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-section input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-section a {
+        display: block;
+        text-align: center;
+        width: 96%;
+    }
+
+}
+
+@media(max-width:600px) {
+    .navbar {
+        padding: 0px;
+        top: 0px;
+        border-radius: 0px;
+        width: 100%;
+        background-color: RGBA(0, 0, 0, 0.9);
+        flex-direction: column;
+    }
+
+    .nav-left {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        align-items: center;
+        flex-direction: column;
+        padding: 0px
+    }
+
+    .nav-list li {
+        padding: 10px;
+    }
+
+    .nav-list li a {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .navbar-order-btn {
+        padding: 12px 24px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 35px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+
+    .leaf {
+        opacity: 0;
+    }
+
+    .pizza-img {
+        margin-top: -150px;
+        float: none;
+    }
+
+    .icons {
+        margin-left: 190px;
+    }
+
+    .icon-image {
+        width: 20%;
+    }
+
+    .icon-container h3 {
+        font-size: 0.6rem;
+    }
+
+    .quality {
+        padding: 0px 30px;
+    }
+
+    .quality-text {
+        text-align: center;
+        /* padding: 0px; */
+    }
+
+    .chef-heading {
+        width: 80%;
+    }
+
+    .chef-images {
+        width: 90%;
+    }
+}
+
+@media(max-width: 428px) {
+    .home-text-main {
+        width: 230px;
+        padding: 0px;
+        margin: 0px 20px;
+    }
+
+    .home-text {
+        padding-right: 0px;
+    }
+
+    .home-text h1 {
+        font-size: 1.2rem;
+        margin: 15px 0px;
+    }
+
+    .home-text p {
+        margin: 0px;
+        font-size: 0.7rem;
+    }
+
+    .quick-order-btn {
+        margin: 10px 0px;
+        padding: 4px 8px;
+        font-size: 0.6rem;
+    }
+
+    .pizza-img {
+        margin-top: -130px;
+    }
+
+    .icons {
+        margin-left: 130px;
+    }
+
+    .quality-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .quality-text h1 {
+        font-size: 1rem;
+    }
+
+    .quality-text p {
+        font-size: 0.7rem;
+    }
+
+    .chef-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .chef-text h1 {
+        font-size: 1rem;
+    }
+
+    .chef-text p {
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width:390px) {
+    .home-text-main {
+        width: 200px;
+        padding: 0px;
+        margin: 0px 20px;
+    }
+
+    .home-text {
+        padding-right: 0px;
+    }
+
+    .home-text h1 {
+        font-size: 1.2rem;
+        margin: 15px 0px;
+    }
+
+    .home-text p {
+        margin: 0px;
+        font-size: 0.7rem;
+    }
+
+    .quick-order-btn {
+        margin: 10px 0px;
+        padding: 4px 8px;
+        font-size: 0.6rem;
+    }
+
+    .pizza-img {
+        margin-top: -130px;
+    }
+
+    .icons {
+        margin-left: 120px;
+    }
+
+    .quality-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .quality-text h1 {
+        font-size: 1rem;
+    }
+
+    .quality-text p {
+        font-size: 0.7rem;
+    }
+
+    .chef-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .chef-text h1 {
+        font-size: 1rem;
+    }
+
+    .chef-text p {
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width:334px) {
+    .home-text-main {
+        width: 170px;
+    }
+}

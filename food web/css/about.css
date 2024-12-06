@@ -1,0 +1,408 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(254, 196, 127, 0.6);
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.logo {
+    padding-top: 5px;
+}
+
+.logo img {
+    height: 35px;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-left {
+    display: flex;
+    left: 0px;
+    align-items: center;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li {
+    padding-right: 25px;
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #503917;
+}
+
+.navbar-order-btn {
+    background-color: #FF7E00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.burger {
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+
+}
+
+.line {
+    cursor: pointer;
+    width: 33px;
+    height: 4px;
+    margin: 3px 3px;
+    background-color: white;
+}
+
+.h-nav-resp {
+    height: 30px;
+}
+
+.main {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section {
+    margin: 40px;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    color: #00bb00
+}
+
+.section p {
+    font-size: 1rem;
+}
+
+.img img {
+    width: 400px;
+    border-radius: 20px;
+    margin: 40px;
+    /* float: left; */
+}
+
+/* Start Footer services for buying */
+footer {
+    margin-top: 100px;
+    background-color: #000000;
+    color: white;
+    border-bottom-left-radius: 80px
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(0, 72, 255);
+}
+
+.contact-section input[type="email"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+}
+
+.contact-section a {
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #d04f29;
+}
+
+.credit {
+    font-size: 14px;
+    color: #ffe6d8;
+}
+
+.last {
+    background-color: #131313;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 80px
+}
+
+
+
+/* Responsive Design for laptops and pc etc  */
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 15px 15px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .nav-list {
+
+        margin: 15px 20px;
+        gap: 15px;
+    }
+
+    .nav-list li {
+        padding-right: 20px;
+    }
+
+    .nav-list li a {
+        font-size: 1rem;
+    }
+
+    .img img {
+        width: 320px;
+
+    }
+
+    .section h3 {
+        font-size: 1.4rem;
+    }
+
+    .section p {
+        font-size: 0.9rem;
+    }
+}
+
+/* for tablates only */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 5px 15px;
+    }
+
+    .logo IMG {
+        height: 20PX;
+    }
+
+    .nav-list {
+
+        margin: 10px 15px;
+        gap: 0px;
+    }
+
+    .nav-list LI A {
+        font-size: 0.8REM;
+    }
+
+    .navbar-order-btn {
+        padding: 4px 8px;
+        font-size: 0.6rem;
+    }
+
+    .section {
+        margin: 30px;
+    }
+
+    .img img {
+        margin: 30px;
+        width: 280px;
+
+    }
+
+    .section h3 {
+        font-size: 1rem;
+    }
+
+    .section p {
+        font-size: 0.7rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .logo-footer {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-section input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-section a {
+        display: block;
+        text-align: center;
+        width: 96%;
+    }
+
+}
+
+@media(max-width:600px) {
+    .navbar {
+        padding: 0px;
+        top: 0px;
+        border-radius: 0px;
+        width: 100%;
+        background-color: RGBA(0, 0, 0, 0.9);
+        flex-direction: column;
+    }
+
+    .nav-left {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        align-items: center;
+        flex-direction: column;
+        padding: 0px
+    }
+
+    .nav-list li {
+        padding: 10px;
+    }
+
+    .nav-list li a {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .navbar-order-btn {
+        padding: 12px 24px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 35px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+
+    .section {
+        margin: 30px;
+        margin-left: 10px;
+    }
+
+    .img img {
+        margin: 30px;
+        width: 200px;
+
+    }
+
+    .section h3 {
+        font-size: 0.9rem;
+    }
+
+    .section p {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media(max-width: 428px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .section {
+        text-align: center;
+    }
+
+    .img img {
+        width: 280px;
+    }
+
+    #main.main {
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width:390px) {
+    .img img {
+        width: 250px;
+    }
+
+}
+
+@media(max-width:334px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .section {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .img img {
+        margin: 0px;
+        width: 230px;
+    }
+
+    #main.main {
+        flex-direction: column-reverse;
+    }
+}
