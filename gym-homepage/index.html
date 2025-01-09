@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymName - Fitness and Strength</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #747171;
+            color: #fff;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 15px;
+            transition: background 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        /* Hero section */
+        .hero {
+            background: url('images/gym3.png') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+        }
+
+        .hero a {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #f44336;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .hero a:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Services section */
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 20px;
+        }
+
+        .services .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .services .card {
+            background: hsl(0, 0%, 90%);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .services .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card img {
+            width: 300px;
+
+        }
+
+        /* Start Footer services for buying */
+        footer {
+            background-color: #000000;
+            color: white;
+            border-bottom-left-radius: 80px
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+
+        .footer-section h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            color: rgb(0, 72, 255);
+        }
+
+        .contact-section input[type="email"] {
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            margin-right: 10px;
+        }
+
+        .contact-section a {
+            padding: 10px 20px;
+            background-color: #1e1e1e;
+            text-decoration: none;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #d04f29;
+        }
+
+        .credit {
+            font-size: 14px;
+            color: #ffe6d8;
+        }
+
+        .last {
+            background-color: #131313;
+            padding: 15px 0;
+            text-align: center;
+            border-bottom-left-radius: 80px
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Gymaty</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Fitness</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1>Welcome to Gymaty</h1>
+        <p>Strength. Fitness. Transformation.</p>
+        <a href="#services">Get Started</a>
+    </header>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/gym9.png" alt="">
+                <h3>Personal Training</h3>
+                <p>Get one-on-one training with our expert trainers to achieve your goals.</p>
+            </div>
+            <div class="card">
+                <img src="images/gym7.png" alt="">
+                <h3>Group Classes</h3>
+                <p>Join our high-energy group classes and stay motivated.</p>
+            </div>
+            <div class="card">
+                <img src="images/gym8.png" alt="">
+                <h3>Nutrition Plans</h3>
+                <p>Customized meal plans designed for your fitness needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="footer-container">
+            <a class="logo" href="#"> <img src="images/logo.png" alt="logo"></a>
+            <div class="footer-section">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Product catagaries</h4>
+                <ul>
+                    <li><a href="#">Protein Powders</a></li>
+                    <li><a href="#">Protein Snacks</a></li>
+                    <li><a href="#">Bundles</a></li>
+                    <li><a href="#">Top Sellers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="https://www.youtube.com" target="_blank">youtube</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">instagram</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank">linkedin</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-section">
+                <h4>Contact Us</h4>
+                <input type="email" placeholder="Email">
+                <a href="https://mail.google.com/mail/u/0/#sent?compose=CllgCJvqrssJwLlCNFkClSVlzQdtZTgZXCrcZpzgCjMBmSgTqqVGPJCvbpsfVdsDKQRqcQQRBNB"
+                    target="_blank">Send</a>
+            </div>
+        </div>
+        <div class="last">
+            <p class="credit">&copy; 2024 All rights reserved by Muteeb-Ul-Rehman</p>
+        </div>
+    </footer>
+</body>
+
+</html>
